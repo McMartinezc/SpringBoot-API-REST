@@ -48,3 +48,9 @@ http://localhost:9000/sucursal/getAll
 Com pots veure, a l’arxiu application.properties, hauràs de configurar que el port a utilitzar sigui el 9000.
 
 La vista haurà d’estar desenvolupada amb Thymeleaf.
+
+Recursos utilitzats:
+
+https://www.geeksforgeeks.org/spring-boot-thymeleaf-with-example/
+
+https://www.youtube.com/watch?v=nP7O26fFkjI
