@@ -1,0 +1,39 @@
+<!--Esta página se utiliza para actualizar los datos de las sucursales existentes.-->
+
+<!DOCTYPE html>
+<html lang="es"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Update Sucursals</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <style>
+        .container{
+            justify-content:center;
+            flex-direction:column;
+            align-items:center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>Actualitzar Sucursal</h1>
+    <hr>
+     <form action="#" a th:href="@{/update/{id}(id=${sucursal.id})}" th:object="${sucursal}"method="POST">
+
+        <input type="hidden" th:field="*{id}" />
+
+        <input type="text" th:field="*{nomSucursal}" class="form-control mb-4 col-4">
+
+        <input type="text" th:field="*{paisSucursal}" class="form-control mb-4 col-4">
+
+        <button type="submit" class="btn btn-info col-2"> Actualitzar Sucursal</button>
+    </form>
+
+    <hr>
+
+    <a th:href = "@{/}">Torna al llistat</a>
+</div>
+</body>
+</html>
